@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field name="id" 
+            type="text" 
+            default="0" 
+            readonly="true" 
+            class="readonly" 
+            label="JGLOBAL_FIELD_ID_LABEL" 
+            description ="JGLOBAL_FIELD_ID_DESC" />
+            
+  		<field name="schedule_id" 
+            type="text" 
+            default="0"             
+            class="inputbox" 
+            label="COM_SCHEDULE_FIELD_SCHEDULE_ID_TITLE" 
+            description="COM_SCHEDULE_FIELD_SCHEDULE_ID_DESC" />     
+            
+		<field name="day_id" 
+            type="days"
+            class="inputbox" 
+            default="0"
+            readonly="true"              
+            label="COM_SCHEDULE_FIELD_DAY_ID_TITLE" 
+            description="COM_SCHEDULE_FIELD_DAY_ID_DESC" />   
+        
+        <field name="line_id" 
+            type="lines"
+            class="inputbox" 
+            default="0"     
+            readonly="true"         
+            label="COM_SCHEDULE_FIELD_LINE_ID_TITLE" 
+            description="COM_SCHEDULE_FIELD_LINE_ID_DESC" /> 
+            
+        <field name="event_id" 
+            type="events"
+            class="inputbox"
+            required="true"
+            label="COM_SCHEDULE_FIELD_EVENT_ID_TITLE" 
+            description="COM_SCHEDULE_FIELD_EVENT_ID_DESC" />
+            
+        <field name="published" 
+            type="list"	
+            default="1"	
+            description="COM_SCHEDULE_FIELD_PUBLISHED_DESC" 
+            label="JSTATUS" 
+            size="1">
+                <option value="1">JPUBLISHED</option>
+                <option value="0">JUNPUBLISHED</option>
+		</field>                     
+    </fieldset>
+    
+    <fields name="params" />
+</form>    

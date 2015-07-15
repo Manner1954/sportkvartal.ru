@@ -1,0 +1,5 @@
+/*
+ALTER TABLE `tablename` ADD COLUMN `name` VARCHAR(255) NULL 
+*/
+ALTER TABLE #__mannerfolio
+ADD COLUMN `time` VARCHAR(20) NULL

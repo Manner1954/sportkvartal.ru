@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field name="id" 
+            type="text" 
+            default="0" 
+            readonly="true" 
+            class="readonly" 
+            label="JGLOBAL_FIELD_ID_LABEL" 
+            description ="JGLOBAL_FIELD_ID_DESC" />
+            
+  		<field name="name"
+            type="text" 
+            class="inputbox" 
+            size="50" 
+            label="COM_SCHEDULE_NAME_LABEL" 
+            description="COM_SCHEDULE_NAME_DESC" 
+            required="true" />
+                
+        <field name="title"
+            type="text" 
+            class="inputbox" 
+            size="50" 
+            label="COM_SCHEDULE_LABEL_LABEL" 
+            description="COM_SCHEDULE_LABEL_DESC" 
+            required="true" />     
+            
+        <field name="type" 
+            type="list"            	
+            description="COM_SCHEDULE_FIELD_TYPE_DESC" 
+            label="COM_SCHEDULE_FIELD_TYPE_LABEL" 
+            size="1">                
+                <option value="textarea">Текст</option>
+                <option value="editor">Редактор</option>
+                <option value="list">Список</option>
+                <option value="article">Статья</option>
+		</field>
+            
+		<field name="published"
+            type="list"	
+            default="1"
+            label="COM_SCHEDULE_FIELD_SHOW_IN_TABLE_LABEL"
+            description="COM_SCHEDULE_FIELD_SHOW_IN_TABLE_DESC"
+            size="1">
+                <option value="1">JPUBLISHED</option>
+                <option value="0">JUNPUBLISHED</option>
+		</field>
+        
+        <field name="value"
+            type="textarea" 
+            class="inputbox" 
+            size="50" 
+            label="COM_SCHEDULE_VALUE_LABEL" 
+            description="COM_SCHEDULE_VALUE_DESC" />    
+        
+        <field name="ordering" 
+            type="ordering" 
+            class="inputbox"
+            default="1"
+            label="JFIELD_ORDERING_LABEL" 
+            description="JFIELD_ORDERING_DESC" /> 
+                       
+    </fieldset>
+    
+    <fields name="params" />
+</form>    

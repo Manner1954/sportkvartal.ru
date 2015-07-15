@@ -1,0 +1,71 @@
+/**
+ * Core Design Spoiler plugin for Joomla! 2.5
+ * @author		Daniel Rataj, <info@greatjoomla.com>
+ * @package		Joomla
+ * @subpackage	Content
+ * @category   	Plugin
+ * @version		2.5.x.2.0.2
+ * @copyright	Copyright (C) 2007 - 2012 Great Joomla!, http://www.greatjoomla.com
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL 3
+ * 
+ * This file is part of Great Joomla! extension.   
+ * This extension is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This extension is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+ 
+/* Container */
+.cdspoiler {
+	background-color: #f5f5f5;
+	padding: 3px 5px;
+}
+
+/* Container - title */
+.cdspoiler .cdspoiler_title {
+	margin: 5px 0;
+}
+
+/* Container - button */
+.cdspoiler button {
+	border: 1px solid gray;
+	font-size: 90%;
+	background-color: #dcdcdc;
+	padding: 0;
+	margin-right: .1em;
+	text-decoration: none !important;
+	cursor: pointer;
+	text-align: center;
+	zoom: 1;
+	overflow: visible;
+}
+.cdspoiler button span {
+	padding: 0.4em 0.5em;
+	display: block;
+	line-height: 0.8;
+}
+
+/* Container - source */
+.cdspoiler .cdspoiler_source {
+	border: 2px dotted silver;
+	padding: 3px 5px;
+}
+
+/* Container - source hide */
+.cdspoiler .source_hide {
+	display: none;
+}
+
+/* Container - source show */
+.cdspoiler .source_show {
+	display: block;
+}

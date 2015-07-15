@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form addrulepath="/administrator/components/com_mannerfolio/models/rules">
+	<fieldset>
+		<field name="id" type="text" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" />
+		<field name="name" required="true" type="text" size="40" default="" label="JGLOBAL_TITLE" description="JGLOBAL_TITLE_DESC" class="inputbox" />
+		<field name="alias" required="true" type="text" size="40" default="" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" class="inputbox" />
+		<field name="professio" required="true" type="text" size="50" default="" label="COM_MANNERFOLIO_CARD_PROFESSIO_TITLE"  description="COM_MANNERFOLIO_CARD_PROFESSIO_DESC" class="inputbox" />
+		<field name="typecard" type="list" size="1" default="0" filter="intval" label="COM_MANNERFOLIO_CARD_TYPECARD_TITLE" description="COM_MANNERFOLIO_CARD_TYPECARD_DESC" class="inputbox" >
+			<option value="1">
+				COM_MANNERFOLIO_CARD_TYPECARD_TRAINING
+			</option>
+			<option value="0">
+				COM_MANNERFOLIO_CARD_TYPECARD_INSTRUCTOR
+			</option>
+		</field><!---->
+		<field name="intodesc" required="true" type="text" size="200" label="COM_MANNERFOLIO_CARD_INTODESC_TITLE" description="COM_MANNERFOLIO_CARD_INTODESC_DESC" class="inputbox" buttons="true" />
+		<field name="fulldesc" type="editor" label="COM_MANNERFOLIO_CARD_FULLDESC_TITLE" description="COM_MANNERFOLIO_CARD_FULLDESC_DESC" class="inputbox" buttons="false" />
+		<field name="catid" type="categories" label="COM_MANNERFOLIO_CARD_CATEGORIES_TITLE" description="COM_MANNERFOLIO_CARD_CATEGORIES_DESC" class="list" />
+		<!--<field name="time" size="15" default="" type="text" label="COM_MANNERFOLIO_CARD_TIME_TITLE" description="COM_MANNERFOLIO_CARD_TIME_DESC" class="inputbox" />-->
+		<field name="image" required="true" type="media" label="COM_MANNERFOLIO_CARD_IMAGE_TITLE" description="COM_MANNERFOLIO_CARD_IMAGE_DESC" />
+		<field name="state" type="list" size="1" default="0" filter="intval" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" >
+			<option value="1">
+				JPUBLISHED
+			</option>
+			<option value="0">
+				JUNPUBLISHED
+			</option>
+		</field><!---->
+	</fieldset>
+	<fieldset name="accesscontrol">
+		<field name="asset_id" type="hidden" filter="unset" />
+		<field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_mannerfolio" section="card" />
+	</fieldset>
+</form>

@@ -1,0 +1,51 @@
+/**
+ * @package		mod_jpanel
+ * @copyright	Copyright (C) 2012 Girolamo Tomaselli All rights reserved.
+ * @email		girotomaselli@gmail.com
+ * @website		http://bygiro.com
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+.jPanel{
+    position:fixed;
+	z-index: 1000000;
+}
+
+.jpanelHandle{
+    height:auto;
+    width:auto;
+    cursor:pointer;
+	text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+	padding: 0px;
+}
+
+.jpanelContent{
+	overflow:auto;
+	padding: 0 5px;
+}
+
+li.jpanelMod {
+	list-style: none;
+}
+
+ul.modulelist {
+	margin: 0;
+	padding: 5px;
+}
+
+.jpanelHandle p {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#close_jpanel {
+	text-align: center;
+}
+
+.jpanelContainer {
+	position: relative;
+}

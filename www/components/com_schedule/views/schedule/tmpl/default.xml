@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="com_schedule_schedule_view_default_title">
+        <message>com_schedule_schedule_view_default_desc</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_schedule/models/fields">
+            <field name="id" type="schedules"
+                   required="true"
+                   label="COM_SCHEDULE_SCHEDULE_ID_FIELD_LABEL"
+                   description="COM_SCHEDULE_SCHEDULE_ID_FIELD_DESC" />
+        </fieldset>
+    </fields>
+</metadata>

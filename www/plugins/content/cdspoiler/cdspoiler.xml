@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_cdspoiler</name>
+	<author>Daniel Rataj</author>
+	<creationDate>January 31th, 2012</creationDate>
+	<copyright>(C) 2007 - 2012 Great Joomla! All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+	<authorEmail>info@greatjoomla.com</authorEmail>
+	<authorUrl>www.greatjoomla.com</authorUrl>
+	<version>2.5.x.2.0.2</version>
+	<description>PLG_CONTENT_CDSPOILER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cdspoiler">cdspoiler.php</filename>
+		<filename>index.html</filename>
+		<filename>license-gpl.txt</filename>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_cdspoiler.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_cdspoiler.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="plugins/system/cdscriptegrator/fields">
+			<fieldset name="basic" addfieldpath="/plugins/content/cdspoiler/fields">
+				<field type="checkscriptegrator" title="PLG_CONTENT_CDSPOILER_ENABLE_SCRIPTEGRATOR" />
+				<field name="action" type="list" default="click"
+					label="PLG_CONTENT_CDSPOILER_LABEL_ACTION" description="PLG_CONTENT_CDSPOILER_DESC_ACTION">
+					<option value="click">PLG_CONTENT_CDSPOILER_PARAM_ACTION_CLICK
+					</option>
+					<option value="hover">PLG_CONTENT_CDSPOILER_PARAM_ACTION_HOVER
+					</option>
+				</field>
+				<field name="element" type="list" default="element"
+					label="PLG_CONTENT_CDSPOILER_LABEL_ELEMENT" description="PLG_CONTENT_CDSPOILER_DESC_ELEMENT">
+					<option value="link">PLG_CONTENT_CDSPOILER_PARAM_ELEMENT_LINK
+					</option>
+					<option value="button">PLG_CONTENT_CDSPOILER_PARAM_ELEMENT_BUTTON
+					</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

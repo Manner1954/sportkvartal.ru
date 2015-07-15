@@ -1,0 +1,356 @@
+
+/*
+#------------------------------------------------------------------------
+# RockWall - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Basic elements */
+
+
+html {
+	height: 100%;
+}
+
+body,
+html {
+	margin: 0;
+	min-height: 100%;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #ddd;
+	min-height: 100%;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+body,
+html,
+body button,
+body input,
+body select,
+body textarea {
+	font: 300 16px/2 Arial, sans-serif
+}
+
+a {
+	-webkit-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	-moz-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	-o-transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	transition: background .3s cubic-bezier(.17, .67, .88, 1.25), color .2s linear;
+	color: #29a3e0;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #222;
+}
+
+/* containers */
+
+
+#gkPage {
+	margin: 100px auto;
+	padding: 0;
+	width: 840px;
+}
+
+#wrapper {
+	background: transparent;
+	padding: 0 0 30px;
+}
+
+#wrapper > div {
+	float: left;
+	width: 43%;
+}
+
+#wrapper > div + div {
+	float: right;
+	margin-top: 74px;
+	width: 43%;
+}
+
+/* Logo  */
+
+
+#gkLogo {
+	-webkit-transition: background-color .3s linear;
+	-moz-transition: background-color .3s linear;
+	-ms-transition: background-color .3s linear;
+	-o-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	padding: 0;
+	text-indent: -999em;
+	text-shadow: none;
+}
+
+#gkLogo img {
+	display: block;
+	margin: 0;
+}
+
+#gkLogo.cssLogo {
+	background: transparent url('../../images/logo.png') no-repeat 0 0;
+	height: 98px;
+}
+
+#gkLogo.text {
+	color: #060606;
+	display: block;
+	height: auto;
+	margin: 14px 0 0;
+	overflow: hidden;
+	padding: 10px 5px;
+	text-indent: 0;
+	width: auto;
+}
+
+#gkLogo.text > span {
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 0;
+}
+
+#gkLogo.text .gkLogoSlogan {
+	color: #c3c3c3;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+/* Other elements */
+
+
+h2,
+h3 {
+	color: #29A3E0;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 36px 0 0;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #999;
+	font-size: 22px;
+	font-weight:600;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+
+fieldset {
+	border: none;	
+	padding: 0;	
+	overflow: hidden;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 4px 4px rgba(0,0,0,0.06);
+	-moz-box-shadow: inset 0 4px 4px rgba(0,0,0,0.06);
+	box-shadow: inset 0 4px 4px rgba(0,0,0,0.06);
+	font-size: 14px;
+	font-weight: 300;
+	color: #848484;
+	height: 38px;
+	width: 99%!important;
+	padding: 0 10px;
+}
+
+legend {
+	color: #333;
+	font-size: 22px
+}
+
+html.-moz-select {
+	padding: 3px 5px
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	background: #fffef4;
+}
+
+input[type="submit"],
+input[type="button"] {
+	-webkit-transition: all .3s ease-out;
+	   -moz-transition: all .3s ease-out;
+	     -o-transition: all .3s ease-out;
+	        transition: all .3s ease-out;
+	background: #747474;
+	background-image: linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -moz-linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -webkit-linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4A4A4A), color-stop(0.99, #747474));
+	border: none;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: 600;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 5px 2px 2px;
+	padding: 0 22px;
+	text-align: center;
+	
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+	background: #2AA4E1;
+	background-image: linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -moz-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1162B3), color-stop(0.99, #2AA4E1));
+	border: none;
+	color: #fff;
+}
+
+label {
+	color: #222;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 6px 0 0;
+	text-transform: uppercase
+}
+
+/* messages */
+
+#system-message ul {
+	padding: 0!important;
+}
+
+#system-message dt {
+	display: none;
+}
+
+#system-message-container {
+	margin: 0 auto 5px auto!important;
+	max-width: 640px;
+	padding: 0;
+}
+
+#system-message dd ul {
+	list-style: none !important;
+	margin: 0!important;
+}
+
+#system-message dd {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #fcf8e5;
+	border-bottom: 1px solid #efecc5;
+	box-sizing: border-box;
+	color: #c0b136;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0!important;
+	min-height: 30px;
+	padding: 6px 10px;
+	text-align: center;
+}
+
+#system-message dd.error {
+	background-color: #F2DEDE;
+	border-bottom: 1px solid #EED3D7;
+	color: #B94A48;
+}
+
+#system-message dd.notice {
+	background-color: #D9EDF7;
+	border-bottom: 1px solid #BCE8F1;
+	color: #3A87AD;
+}
+
+@media (max-width: 920px) {
+	#gkPage {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 20px;
+	}
+	
+	#wrapper > div,
+	#wrapper > div + div,
+	#wrapper > div + div + div {
+		clear: both;
+		float: none;
+		width: 100%;
+	}
+	
+	h1 {
+		border-bottom: 1px solid #ddd;
+		font-size: 160px;
+		letter-spacing: -3px;
+		margin: -20px 0 10px 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 32px;
+	}
+	
+	h3 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+	#gkPage {
+		margin: 12px 0!important;
+	}
+	
+	h1 {
+		border-bottom: 1px solid #ddd;
+		font-size: 120px;
+		letter-spacing: 0;
+		margin: -20px 0 10px 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 26px;
+	}
+	
+	h3 {
+		font-size: 18px;
+	}
+}

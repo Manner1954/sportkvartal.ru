@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset>
+		<field name="id" type="text" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" />
+		<field name="name" required="true" type="text" size="40" default="" label="JGLOBAL_TITLE" description="JGLOBAL_TITLE_DESC" class="inputbox" />
+		<field name="alias" required="true" type="text" size="40" default="" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" class="inputbox" />
+		<!--<field name="state" type="list" size="1" default="0" filter="intval" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" > 
+			<option value="1">
+				JPUBLISHED
+			</option>
+			<option value="0">
+				JUNPUBLISHED
+			</option>
+		</field>-->
+	</fieldset>
+</form>

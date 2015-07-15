@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <params>   
+    <param name="level" type="level" default="" label="LEVEL_SETTINGS" description="" />
+  </params>
+  
+  <params group="level">  
+    <param name="level[x]textfont" type="font" default="*Latin|*Arial, Helvetica|*PT Sans|*14px|*1|*0|*FFFFFF|*1|*1px|*1px|*1px|*000000|*none|*none|*normal" label="Caption Font" description="Determines the font style of the button caption" />
+    <param name="level[x]linktitle" type="text" default="link[x]" label="Caption" description="Determines the text will appear on the button as caption"/>
+    <param name="level[x]linkurl" type="text" default="#" label="Url" description="Determines the location where the button will point to"/>
+    <param name="level[x]color" type="color" default="#ff7f00" label="Color" description="Determines the color of the button"/>
+  </params>
+</theme>

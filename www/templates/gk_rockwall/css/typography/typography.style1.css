@@ -1,0 +1,615 @@
+
+/*
+#------------------------------------------------------------------------
+# RockWall - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+
+
+b,
+ strong {
+	font-weight: 600
+}
+
+.k2box > ul,
+ .k2box > ul ul {
+	list-style-type: disc;
+	padding-left: 20px
+}
+
+.k2box > ol,
+ .k2box > ol ol {
+	list-style-type: decimal;
+	padding-left: 20px
+}
+
+.k2box > ul li,
+ .k2box > ul ul li,
+ .k2box > ol li,
+ .k2box > ol ol li {
+	list-style-position: outside;
+	padding-left: 0
+}
+
+p.gkInfo1,
+ p.gkTips1,
+ p.gkWarning1 {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 12px 12px 12px 66px;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.gkHighlight1,
+ .gkHighlight2,
+ .gkHighlight3,
+ .gkHighlight4 {
+	cursor: default;
+	padding: 1px 5px;
+	text-shadow: none
+}
+
+pre,
+ .gkCode1,
+ .gkCode2,
+ .gkCode3 {
+	font: normal .92em/32px 'Curier New', monospace!important;
+	margin: 20px 0!important;
+	padding: 26px 30px!important;
+}
+
+pre,
+ .gkCode1,
+ .gkCode2 {
+ -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter: alpha(opacity=100);
+	opacity: 1
+}
+
+.gkCode3 {
+	border: 1px solid #eee;
+	color: #363636;
+	padding-left: 82px!important
+}
+
+.gkCode3 h4 {
+	background: #29a3e0;
+	color: #fff;
+	font-size: 13px;
+	margin: 0 0 0 -64px !important;
+	padding: 2px 5px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 35px
+}
+
+div.gkCode2:hover,
+ div.gkCode3:hover {
+	color: #000
+}
+
+ol {
+	list-style-position: inside;
+	margin: 2em 0;
+	padding: 0
+}
+
+ol.gkDec {
+	list-style-type: decimal
+}
+
+ol.gkRoman {
+	list-style-type: upper-roman
+}
+
+ol.gkAlpha {
+	list-style-type: lower-alpha
+}
+
+ol.gkDecimalLeadingZero {
+	list-style-type: decimal-leading-zero
+}
+
+ul.gkBullet1,
+ ul.gkBullet2,
+ ul.gkBullet3,
+ ul.gkBullet4,
+ #k2Container .itemFullText ul,
+ #k2Container .itemIntroText ul {
+	margin: 2em 0;
+	padding: 0
+}
+
+ul li {
+	list-style-position: outside
+}
+
+ul.gkBullet1 li,
+ ul.gkBullet2 li,
+ ul.gkBullet3 li,
+ ul.gkBullet4 li,
+ #k2Container .itemFullText ul li,
+ #k2Container .itemIntroText ul li {
+	line-height: 1.8em!important;
+	list-style: none;
+	margin: 0!important;
+	overflow: inherit;
+	padding: 2px 0 2px 28px;
+	position: relative
+}
+
+ul.gkBullet1 li:before,
+ ul.gkBullet2 li:before,
+ ul.gkBullet3 li:before,
+ ul.gkBullet4 li:before,
+ #k2Container .itemFullText ul li:before,
+ #k2Container .itemIntroText ul li:before {
+	font-family: FontAwesome;
+	font-size: 13px;
+	position: absolute;
+	top: 3px;
+	left: 0
+}
+
+div.gkLegend1 h4 {
+	background: #fff;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	left: 11px;
+	line-height: 18px;
+	margin: 0 0 -9px!important;
+	padding: 0 10px;
+	position: relative;
+	text-transform: uppercase;
+	top: -16px
+}
+
+div.gkLegend1 {
+	margin: 30px 0;
+	padding: 6px
+}
+
+div.gkLegend1 p {
+	clear: both;
+	margin: 7px
+}
+
+blockquote {
+	font-style: italic;
+	margin: 40px 0
+}
+
+blockquote div {
+	display: block;
+	position: relative;
+}
+
+blockquote > div > div {
+	padding: 0 38px;
+}
+
+blockquote div.gkBlockquote3 div,
+blockquote div.gkBlockquote4 div {
+	color: #222;
+	font-size: 20px;
+	padding: 0 80px;
+}
+
+blockquote div.gkBlockquote1 div:before,
+ blockquote div.gkBlockquote2 div:before,
+ blockquote div.gkBlockquote1:before,
+ blockquote div.gkBlockquote2:before,
+ blockquote div.gkBlockquote3 div:before,
+ blockquote div.gkBlockquote4 div:before,
+ blockquote div.gkBlockquote3:before,
+ blockquote div.gkBlockquote4:before {
+	color: #ccc;
+	content: "\f10e";
+	font-family: FontAwesome;
+	font-size: 14px;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+blockquote div.gkBlockquote1:before,
+blockquote div.gkBlockquote3:before {
+	content: "\f10d";
+	bottom: 0;
+	left: 0;
+	top: inherit
+}
+
+blockquote div.gkBlockquote2:before {
+	content: "\f10d";
+	left: 0;
+}
+
+blockquote div.gkBlockquote3 div:before,
+blockquote div.gkBlockquote4 div:before,
+blockquote div.gkBlockquote3:before,
+blockquote div.gkBlockquote4:before {
+	color: #222;
+	font-size: 56px;
+}
+
+blockquote div.gkBlockquote4:before {
+	content: "\f10d";
+	left: 0;
+	top: 20px
+}
+
+blockquote div.gkBlockquote4 div:before {
+	bottom: 20px;
+	top: inherit
+}
+
+.gkBlockTextLeft,
+.gkBlockTextRight,
+.gkBlockTextCenter {
+	color: #242424;
+	display: block;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 170%;
+	padding: 30px 40px;
+	width: 38%
+}
+
+.gkBlockTextLeft {
+	float: left;
+	padding-left: 0;
+	text-align: left
+}
+
+.gkBlockTextRight {
+	float: right;
+	padding-right: 0;
+	text-align: right
+}
+
+.gkBlockTextCenter {
+	margin: 0 auto;
+	text-align: center
+}
+
+p.numblocks {
+	margin: 20px 0;
+	min-height: 56px;
+	padding: 0 0 0 68px !important;
+	position: relative
+}
+
+p.numblocks span {
+	-moz-border-radius: 50%;
+	-ms-webkit-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	height: 46px;
+	left: 0;
+	line-height: 46px;
+	position: absolute;
+	text-align: center;
+	top: 4px;
+	width: 46px
+}
+
+p.num-1 span {
+	background: #222;
+}
+
+p.num-2 span {
+	background: #EE5F5B;
+}
+
+p.num-3 span {
+	background: #29A3E0;
+}
+
+p.numblocks span.highlight {
+	border-right: none;
+	display: inline;
+	font-size: 15px;
+	position: static;
+	width: auto
+}
+
+.gkblock-1,
+ .gkblock-2,
+ .gkblock-3 {
+	margin: 36px 0;
+	padding: 15px 20px
+}
+
+.bubble-1,
+ .bubble-2 {
+	margin: 20px 0 40px;
+	padding: 15px 20px;
+	position: relative
+}
+
+.bubble-1::after,
+ .bubble-2::after {
+	border-color: transparent;
+	border-style: solid;
+	border-width: 22px 0 0 22px;
+	bottom: -22px;
+	content: "";
+	display: block;
+	left: 30px;
+	position: absolute;
+	width: 0;
+}
+
+.bubble-1 cite,
+ .bubble-2 cite {
+	bottom: -25px;
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	height: 25px;
+	left: 26px;
+	line-height: 32px;
+	padding-left: 40px;
+	position: absolute
+}
+
+pre {
+	border: 1px solid #e5e5e5;
+	border-left: 5px solid #EE5F5B;
+	color: #363636;
+	padding-left: 32px
+}
+
+.gkCode2 {
+	border: 1px solid #e5e5e5;
+	border-top: 5px solid #29a3e0;
+	color: #363636
+}
+
+p.gkInfo1 {
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	color: #3A87AD;
+}
+
+p.gkTips1 {
+	background-color: #fcf8e5;
+	border-color: #efecc5;
+	color: #c0b136;
+}
+
+p.gkWarning1 {
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	color: #B94A48;
+}
+
+p.gkInfo1:before,
+p.gkTips1:before,
+p.gkWarning1:before {
+	font-family: FontAwesome;
+	font-size: 24px;
+	position: absolute;
+	top: 7px;
+	left: 22px;
+}
+
+p.gkInfo1:before {
+	color: #3A87AD;
+	content: "\f05a";
+}
+
+p.gkTips1:before {
+	color: #c0b136;
+	content: "\f0eb";
+}
+
+p.gkWarning1:before {
+	color: #B94A48;
+	content: "\f057";
+}
+
+div.gkLegend1 {
+	border: 4px double #e5e5e5
+}
+
+div.gkLegend1 h4 {
+	background: #fff;
+	color: #242424
+}
+
+.gkHighlight1 {
+	background: #ffd
+}
+
+.gkHighlight4 {
+	background: #222;
+	color: #fff
+}
+
+.gkblock-1 {
+	border: 1px solid #e5e5e5
+}
+
+.gkblock-2 {
+	background: #FFFEF4;
+	border: 1px solid #EAE8CC
+}
+
+.gkblock-3 {
+	background: #f8f8f8
+}
+
+.bubble-1 {
+	background: #222;
+	color: #fff
+}
+
+.bubble-1::after {
+	border-color: #222;
+	border-left: 22px solid transparent;
+}
+
+.bubble-2 {
+	background: #D9EDF7;
+	color: #3A87AD
+}
+
+.bubble-2::after {
+	border-color: #D9EDF7;
+	border-left: 22px solid transparent;
+}
+
+.bubble-1 cite {
+	color: #363636
+}
+
+.bubble-2 cite {
+	color: #3A87AD
+}
+
+ul.gkBullet1 li:before,
+ #k2Container .itemFullText ul li:before,
+ #k2Container .itemIntroText ul li:before {
+	color: #222;
+	content: "\f00c";
+}
+
+ul.gkBullet2 li:before {
+	color: #222;
+	content: "\f046";
+}
+
+ul.gkBullet3 li:before {
+	color: #222;
+	content: "\f0a4";
+}
+
+ul.gkBullet4 li:before {
+	color: #222;
+	content: "\f0a9";
+}
+
+ul#demo-typography {
+	background: transparent;
+	overflow: hidden;
+	padding: 10px 30px 30px
+}
+
+ul#demo-typography li {
+	color: #cb260a;
+	float: left;
+	font-size: 11px;
+	line-height: 24px;
+	list-style-position: none;
+	list-style-type: disc;
+	width: 23.9%
+}
+
+ul#demo-typography li a {
+	font-size: 11px;
+	text-shadow: 2px 2px 0 #fff
+}
+
+.demo-typoDiv {
+	clear: both;
+	margin: 0 0 30px;
+	overflow: hidden
+}
+
+h4.demo-typo {
+	border-bottom: 1px solid #eee;
+	color: #222;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 30px 0;
+	padding: 0 0 8px;
+	text-transform: uppercase
+}
+
+.demo-typo-col2 {
+	float: left;
+	width: 50%
+}
+
+.demo-typo-col3 {
+	float: left;
+	width: 33%
+}
+
+.demo-typo-col4 {
+	float: left;
+	width: 25%
+}
+
+.demo-typo_padd {
+	padding: 0 15px
+}
+
+#warnings .demo-typo_padd p {
+	margin: 1em 0 1.6em
+}
+
+.typoDesc small {
+	background: #f9f9f9;
+	color: #888;
+	font: normal 11px Monaco, Consolas, "Courier News", monospace;
+	padding: 6px;
+}
+
+.gkblock-3 small {
+	color: #353639!important
+}
+
+.bubble-1 small {
+	background: rgba(255,255,255, 0.15);
+	color: #fff
+}
+
+pre:hover,
+ .gkCode1:hover {
+	background: #fff
+}
+
+.gkHighlight3,
+ span.helpTooltip {
+	background: #EE5F5B;
+	color: #fff;
+}
+
+.gkHighlight2 {
+	background: #D9EDF7;
+	border: 1px solid #BCE8F1;
+	color: #3A87AD;
+}
+
+h5.page-header {
+	clear: both;
+	padding: 36px 0 18px;
+	text-transform: uppercase
+}
+[class^="icon-"], [class*=" icon-"] {
+ color: #222;
+ padding-right: 8px
+}

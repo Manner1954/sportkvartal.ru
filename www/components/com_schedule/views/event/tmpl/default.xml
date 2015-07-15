@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="com_schedule_event_view_default_title">
+        <message>com_schedule_event_view_default_desc</message>
+    </layout>
+    <fields name="request">
+        <!--fieldset name="request">
+            <field name="id"
+                type="list"
+                label="COM_HELLOWORLD_HELLOWORLD_FIELD_GREETING_LABEL"
+                description="COM_HELLOWORLD_HELLOWORLD_FIELD_GREETING_DESC"
+                default="1">
+                    <option value="1">Hello World!</option>
+                    <option value="2">Good bye World!</option>
+            </field>
+        </fieldset-->
+    </fields>
+</metadata>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field name="id" 
+            type="text" 
+            default="0" 
+            readonly="true" 
+            class="readonly" 
+            label="JGLOBAL_FIELD_ID_LABEL" 
+            description ="JGLOBAL_FIELD_ID_DESC" />
+            
+        <field name="name"
+            type="text" 
+            class="inputbox" 
+            size="30"
+            label="JFIELD_ALIAS_LABEL" 
+            description="JFIELD_ALIAS_DESC" /> 
+            
+  		<field name="title"
+            type="text" 
+            class="inputbox" 
+            size="40"
+            label="JGLOBAL_TITLE" 
+            description="JFIELD_TITLE_DESC" 
+            required="true" />
+
+        <field name="article_id"
+               type="modal_article"
+               class="inputbox"
+               label="COM_SCHEDULE_FIELD_ARTICLE_LINK"
+               description="" />
+
+        <field name="group_id"
+               type="groups"
+               class="inputbox"
+               required="true"
+               label="COM_SCHEDULE_FIELD_GROUP_LINK"
+               description="" />
+
+        <field name="record"
+               type="list"
+               class="checkbox"
+               label="COM_SCHEDULE_FIELD_EVENT_RECORD"
+               description="COM_SCHEDULE_FIELD_EVENT_RECORD_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+        
+        <field name="ordering" 
+            type="ordering" 
+            class="inputbox"
+            default="1"
+            label="JFIELD_ORDERING_LABEL" 
+            description="JFIELD_ORDERING_DESC" />                       
+    </fieldset>
+    
+    <fields name="params" />
+</form>    

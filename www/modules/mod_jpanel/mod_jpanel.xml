@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="1.6" client="site" method="upgrade">
+	<name>jPanel</name>
+	<author>Girolamo Tomaselli</author>
+	<creationDate>10 october 2012</creationDate>
+	<copyright>2014 - Girolamo Tomaselli</copyright>
+	<authorEmail>girotomaselli@gmail.com</authorEmail>
+	<authorUrl>http://bygiro.com</authorUrl>
+	<version>0.9.3</version>
+	<license>GPLv2 or later</license>
+	<description>MOD_JPANEL_DESCRIPTION</description>
+	
+	<files>
+		<filename>mod_jpanel.xml</filename>
+		<filename module="mod_jpanel">mod_jpanel.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_jpanel.ini</language>
+  	</languages>
+
+	<updateservers>
+		<server type="extension" priority="1" name="jPanel">http://bygiro.com/images/downloads/updates/mod_jpanel_update.xml</server>
+	</updateservers>
+	
+	<config>				
+		<fields name="params" addfieldpath="/administrator/components/com_content/models/fields">
+			<fieldset name="basic">				
+				<field name="modOrArt"
+					type="radio"
+					default="0"
+					label="MOD_JPANEL_MODULES_OR_ARTICLE"
+					description="MOD_JPANEL_MODULES_OR_ARTICLE_DESC">
+					<option value="0">MOD_JPANEL_MODULES_OR_ARTICLE_OPTION_MODULES</option>
+					<option value="1">MOD_JPANEL_MODULES_OR_ARTICLE_OPTION_ARTICLE</option>
+				</field>
+				
+				<field name="whatArt"
+					type="Modal_Article"
+					label="MOD_JPANEL_CHOOSE_ARTICLE"
+					description="MOD_JPANEL_CHOOSE_ARTICLE_DESC"/>
+
+				<field name="trigger"
+					type="radio"
+					default="hover"
+					label="MOD_JPANEL_TRIGGER"
+					description="MOD_JPANEL_TRIGGER_DESC">
+					<option value="hover">MOD_JPANEL_TRIGGER_OPTION_HOVER</option>
+					<option value="click">MOD_JPANEL_TRIGGER_OPTION_CLICK</option>
+				</field>
+				
+				<field name="page_load_status"
+					type="radio"
+					default="closed"
+					label="MOD_JPANEL_PAGE_LOAD_STATUS"
+					description="MOD_JPANEL_PAGE_LOAD_STATUS_DESC">
+					<option value="closed">MOD_JPANEL_OPTION_CLOSED</option>
+					<option value="opened">MOD_JPANEL_OPTION_OPENED</option>
+				</field>
+				
+				<field name="side"
+					type="radio"
+					default="right"
+					label="MOD_JPANEL_SIDE"
+					description="MOD_JPANEL_SIDE_DESC">
+						<option value="top">MOD_JPANEL_SIDE_OPTION_TOP</option>
+						<option value="bottom">MOD_JPANEL_SIDE_OPTION_BOTTOM</option>
+						<option value="left">MOD_JPANEL_SIDE_OPTION_LEFT</option>
+						<option value="right">MOD_JPANEL_SIDE_OPTION_RIGHT</option>
+				</field>
+				
+				<field name="buttonType"
+					type="radio"
+					default="txt"
+					label="MOD_JPANEL_BUTTON_TYPE"
+					description="MOD_JPANEL_BUTTON_TYPE_DESC">
+						<option value="txt">MOD_JPANEL_BUTTON_TYPE_OPTION_TEXT</option>
+						<option value="img">MOD_JPANEL_BUTTON_TYPE_OPTION_IMAGE</option>
+						<option value="html">MOD_JPANEL_BUTTON_TYPE_OPTION_HTML</option>
+						<option value="nothing">MOD_JPANEL_BUTTON_TYPE_OPTION_NOTHING</option>
+				</field>
+				
+				<field type="spacer" name="" hr="true" />				
+				<field name="buttonText"
+					type="text"
+					default="Open"
+					description="MOD_JPANEL_BUTTON_TEXT_DESC"
+					label="MOD_JPANEL_BUTTON_TEXT"/>
+				
+				<field name="buttonTextColor"
+					addfieldpath="/modules/mod_jpanel/fields"
+					type="colorpicker"
+					description="MOD_JPANEL_BUTTON_TEXT_COLOR_DESC"
+					label="MOD_JPANEL_BUTTON_TEXT_COLOR"
+					default="#ffffff"/>
+
+				<field name="buttonImg"
+					type="media"
+					label="MOD_JPANEL_BUTTON_IMAGE"
+					description="MOD_JPANEL_BUTTON_IMAGE_DESC" />
+
+				<field name="buttonColor"
+					addfieldpath="/modules/mod_jpanel/fields"					
+					type="colorpicker"
+					description="MOD_JPANEL_BUTTON_COLOR_DESC"
+					label="MOD_JPANEL_BUTTON_COLOR"
+					default="#333333"/>
+				
+				<field name="bckColor"
+					addfieldpath="/modules/mod_jpanel/fields"
+					type="colorpicker"
+					description="MOD_JPANEL_BACKGROUND_COLOR_DESC"
+					label="MOD_JPANEL_BACKGROUND_COLOR"
+					default="#eeeeee"/>
+				
+				<field name="setHeight"
+					type="text"
+					default="300"
+					label="MOD_JPANEL_SET_HEIGHT"
+					description="MOD_JPANEL_SET_HEIGHT_DESC"/>
+					
+				<field name="setWidth"
+					type="text"
+					default="200"
+					label="MOD_JPANEL_SET_WIDTH"
+					description="MOD_JPANEL_SET_WIDTH_DESC"/>
+				
+				<field name="distance"
+					type="text"
+					default="30%"
+					label="MOD_JPANEL_DISTANCE"
+					description="MOD_JPANEL_DISTANCE_DESC"/>
+					
+				<field name="whatMod"
+					type="text"
+					default="myjpanel_position"
+					label="MOD_JPANEL_POSITION"
+					description="MOD_JPANEL_POSITION_DESC"/>
+
+				<field type="spacer" name="" hr="true" />
+				<field name="load_jquery"
+					type="radio"
+					default="0"
+					label="MOD_JPANEL_LOAD_JQUERY"
+					description="MOD_JPANEL_LOAD_JQUERY_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="prepare_content"
+					type="radio"
+					label="MOD_CUSTOM_FIELD_PREPARE_CONTENT_LABEL"
+					description="MOD_CUSTOM_FIELD_PREPARE_CONTENT_DESC"
+					default="1">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+				</field>
+
+				<field type="spacer" name="" label="MOD_JPANEL_SHOW_BYGIRO_LINK_DESC"/>
+				<field
+					name="show_bygiro_link"
+					type="radio"
+					label="MOD_JPANEL_SHOW_BYGIRO_LINK"
+					description="MOD_JPANEL_SHOW_BYGIRO_LINK_DESC"
+					default="1">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>				
+			</fieldset>
+			
+			<fieldset name="other" label="MOD_JPANEL_BUTTON_HTML">
+				<field name="buttonHtml" label ="MOD_JPANEL_BUTTON_HTML" type="editor" filter="RAW" description="MOD_JPANEL_BUTTON_HTML_DESC" width="150" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+					
+				<field name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+					
+				<field name="backgroundimage"
+					type="media"
+					label="MOD_CUSTOM_FIELD_BACKGROUNDIMAGE_LABEL"
+					description="MOD_BACKGROUNDIMAGE_FIELD_LOGO_DESC" />
+					
+				<field name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				
+				<field name="cache_time"
+					type="text"
+					default="900" 
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+					
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

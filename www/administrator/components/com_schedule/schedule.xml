@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+    <name>COM_SCHEDULE</name>
+    <creationDate>12 Juli 2013</creationDate>
+    <author>Manner</author>
+    <authorEmail>admin@mannera.ru</authorEmail>
+    <authorUrl>http://mannera.ru</authorUrl>
+    <copyright>© mannera</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.3</version>
+    <description>Компонент расписания</description>
+
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>schedule.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+    </files>
+
+    <media destination="schedule" folder="media">
+        <folder>css</folder>
+        <folder>images</folder>
+    </media>
+
+    <administration>
+        <menu>COM_SCHEDULE_MENU</menu>
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>schedule.php</filename>
+            <filename>controller.php</filename>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>sql</folder>
+        </files>
+
+        <languages folder="admin">
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_schedule.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_schedule.sys.ini</language>
+        </languages>
+    </administration>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Schedule Update Site">http://joomla.shkola-linux.ru/schedule-update.xml</server>
+    </updateservers>
+</extension>

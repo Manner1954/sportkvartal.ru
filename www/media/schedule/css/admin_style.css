@@ -1,0 +1,64 @@
+.info {
+    font-size: 1.2em;    
+} 
+
+#schedule-table {
+    border-collapse: collapse;   
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#schedule-table tr {
+    
+}
+
+#schedule-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+#schedule-table thead td {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#schedule-table tbody td {
+    border: 1px solid #666;    
+}
+
+#schedule-table td.time {
+    font-size: 1.1em;
+    font-weight: bold;    
+}
+
+#schedule-table .event-title {
+    font-size: 1.6em;
+}
+
+#schedule-table .add-event {
+    background: url(../images/add.png) no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.schedules {
+    list-style: none;
+    padding: 0;
+}
+.schedules li {
+    display: inline-block;
+    padding: 5px 7px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+.schedules li.add {
+    background: none;
+}
+.schedules li .open {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#event-form ul.adminformlist li {
+    clear: both;
+}

@@ -1,0 +1,52 @@
+.removeBtn{
+  height: 16px;
+  width: 16px;
+  background: url('http://cdn1.iconfinder.com/data/icons/fatcow/16x16/cross.png') no-repeat;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+.removeBtnShow{
+  display: block;
+}
+
+.addBtn{
+  height: 16px;
+  width: 16px;
+  background: url('http://icons.iconarchive.com/icons/pixelmixer/basic/16/plus-icon.png') no-repeat;
+  cursor: pointer;
+  float: right;
+}
+
+li fieldset span,
+li fieldset a{
+  float:left;
+  margin: 5px 5px 5px 0;
+}
+
+li fieldset span.jPicker, li fieldset span.jPicker span{
+  margin: 0;
+}
+
+div.panel fieldset.jelement{
+  padding: 0;
+  margin: 10px 0px;
+}
+
+li fieldset.panelform label,
+div.panel fieldset.panelform label{
+  width: 145px;
+  font-weight: bold;
+}
+
+fieldset.panelform .jelement > label,
+fieldset.panelform fieldset.radio > label,
+div.panel li fieldset.jelement > label{
+  float: left;
+  clear: none;
+  max-width: none;
+  min-width: 0;
+  width: auto;
+  font-weight: normal;
+}

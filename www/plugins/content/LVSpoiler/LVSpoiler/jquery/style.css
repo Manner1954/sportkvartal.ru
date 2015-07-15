@@ -1,0 +1,5 @@
+@charset "utf-8";
+.technology {cursor:hand; cursor:pointer; font:bold 12px Tahoma; margin:10px 0; display: inline-block; margin: 3px; width: 920px; height: 30px; background-color: #FF5C00;}
+.technology div {padding: 7px 10px 2px 24px;}
+.openlanguage div {padding-top: 7px; display: block; background: transparent url(../down.gif) no-repeat left center;}
+.closedlanguage div {padding-top: 7px; display: block; background: transparent url(../up.gif) no-repeat left center;}

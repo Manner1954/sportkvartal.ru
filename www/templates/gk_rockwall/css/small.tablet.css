@@ -1,0 +1,89 @@
+/*
+#------------------------------------------------------------------------
+# RockWall - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+.itemsContainer .itemsContainerWrap, 
+.itemContainer .itemsContainerWrap {
+	margin: 0!important;	
+}
+
+#gkInset,
+#gkContentWrap {
+	width: 100%!important;
+}
+
+#gkInset {
+	margin-top: 14px!important;
+	padding: 0!important;
+}
+
+#k2Container article header h2 {
+	font-size: 32px;
+	line-height: 32px;
+}
+.demo-typo-col2,
+.demo-typo-col3,
+.demo-typo-col4 {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+#gkTopMenu {
+	clear: both;
+	float: none!important;
+	margin: 20px 0!important;
+	text-align: center!important;
+}
+
+#gkTopMenu li {
+	display: inline-block;
+	float: none;
+}
+
+article header h1, 
+article header h2 {
+	font-size: 32px;
+}
+
+#gkTags,
+#gkSearchMiddle {
+	clear: both!important;
+	max-width: 100%!important;
+	width: 100%!important;
+}
+
+#gkSearchMiddle {
+	float: none!important;
+	margin: 0 auto!important;
+	overflow: hidden;
+	padding: 16px 0 0 0;
+	width: 300px!important;
+}
+
+.gkIsWrapper-gk_rockwall figcaption h2 {
+	font-size: 32px;
+}
+
+.overlaywhite .nspArts,
+.overlaywhite .nspLinksWrap,
+.overlayblack .nspArts,
+.overlayblack .nspLinksWrap {
+	width: 100%!important;
+}
+
+.overlaywhite .nspLinksWrap,
+.overlayblack .nspLinksWrap {
+	margin-top: 20px;
+}
+
+.overlaywhite .nspLinks,
+.overlayblack .nspLinks {
+	margin: 0!important;
+}

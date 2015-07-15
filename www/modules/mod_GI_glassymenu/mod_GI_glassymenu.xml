@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Glassy menu</name>
+  <author>Janos Biro</author>
+  <copyright>Copyright (C) 2009-2010 Global Illusion. All rights reserved.</copyright>
+  <authorEmail>janos.biro@offlajn.com</authorEmail>
+  <authorUrl>http://www.global-illusion.com</authorUrl>
+  <version>2.0</version>
+  <description>Glassy Menu</description>
+  <config>
+    <fields name="params" addfieldpath="/modules/mod_GI_glassymenu/params">
+      <fieldset name="basic">
+        <field name="update" type="offlajnupdatechecker" label="-"/>
+        <field name="position" type="list" default="1" label="Menu position on the screen" description="In which position do you want to show the menu items?">
+          <option value="1">Left</option>
+          <option value="2">Right</option>
+        </field>
+        <field name="fixed" type="list" default="1" label="Menu fixed to the browser" description="Do you want to fix the menu to the browser or scrolling with the page?">
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </field>
+        <field name="menutop" type="text" default="50" label="The menu top position" description="The menu top position (y-axis) from the (top of the browser/top of the site)"/>
+        <field name="opacity" type="text" default="0.5" label="Opacity" description="The menu opacity when it is hidden"/>
+        <field name="menuitemdistance" type="text" default="10" label="Distance between the menu items (px)" description="Distance between the menu items"/>
+        <field name="theme" type="theme" label="Level" description=""/>
+      </fieldset>
+    </fields>
+  </config>
+  <params addPath="/modules/mod_GI_glassymenu/params">
+    <param name="update" type="offlajnupdatechecker" label="-"/>
+    <param name="position" type="list" default="1" label="Menu position on the screen" description="In which position do you want to show the menu items?">
+      <option value="1">Left</option>
+      <option value="2">Right</option>
+    </param>
+    <param name="fixed" type="list" default="1" label="Menu fixed to the browser" description="Do you want to fix the menu to the browser or scrolling with the page?">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </param>
+    <param name="menutop" type="text" default="50" label="The menu top position" description="The menu top position (y-axis) from the (top of the browser/top of the site)"/>
+    <param name="opacity" type="text" default="0.5" label="Opacity" description="The menu opacity when it is hidden"/>
+    <param name="menuitemdistance" type="text" default="10" label="Distance between the menu items (px)" description="Distance between the menu items"/>
+    <param name="theme" type="theme" label="Level" description=""/>
+  </params>
+  <files>
+    <filename>classes/cache.class.php</filename>
+    <filename>classes/ColorHelper.php</filename>
+    <filename>classes/cssmin5.php</filename>
+    <filename>classes/ImageHelper.php</filename>
+    <filename>classes/index.html</filename>
+    <filename>classes/jsmin4.php</filename>
+    <filename>classes/jsmin5.php</filename>
+    <filename>Engine/engine.js</filename>
+    <filename>Engine/index.html</filename>
+    <filename>index.html</filename>
+    <filename>license.txt</filename>
+    <filename module="mod_GI_glassymenu">mod_GI_glassymenu.php</filename>
+    <filename>mod_GI_glassymenu.xml</filename>
+    <filename>params/color.php</filename>
+    <filename>params/colorpicker/arrow.gif</filename>
+    <filename>params/colorpicker/cross.gif</filename>
+    <filename>params/colorpicker/hs.png</filename>
+    <filename>params/colorpicker/hv.png</filename>
+    <filename>params/colorpicker/index.html</filename>
+    <filename>params/colorpicker/jscolor.js</filename>
+    <filename>params/combobox.php</filename>
+    <filename>params/easing.php</filename>
+    <filename>params/font.js</filename>
+    <filename>params/font.php</filename>
+    <filename>params/fourfield.php</filename>
+    <filename>params/google/Cyrillic.txt</filename>
+    <filename>params/google/CyrillicExtended.txt</filename>
+    <filename>params/google/Greek.txt</filename>
+    <filename>params/google/GreekExtended.txt</filename>
+    <filename>params/google/index.html</filename>
+    <filename>params/google/Khmer.txt</filename>
+    <filename>params/google/Latin.txt</filename>
+    <filename>params/google/LatinExtended.txt</filename>
+    <filename>params/google/Vietnamese.txt</filename>
+    <filename>params/gradient.php</filename>
+    <filename>params/imageradio.php</filename>
+    <filename>params/images/b30.png</filename>
+    <filename>params/images/closebox.png</filename>
+    <filename>params/images/index.html</filename>
+    <filename>params/index.html</filename>
+    <filename>params/jpicker/css/index.html</filename>
+    <filename>params/jpicker/css/jPicker-1.1.6.css</filename>
+    <filename>params/jpicker/css/jPicker-1.1.6.min.css</filename>
+    <filename>params/jpicker/images/AlphaBar.png</filename>
+    <filename>params/jpicker/images/bar-opacity.png</filename>
+    <filename>params/jpicker/images/Bars.png</filename>
+    <filename>params/jpicker/images/index.html</filename>
+    <filename>params/jpicker/images/map-opacity.png</filename>
+    <filename>params/jpicker/images/mappoint.gif</filename>
+    <filename>params/jpicker/images/Maps.png</filename>
+    <filename>params/jpicker/images/NoColor.png</filename>
+    <filename>params/jpicker/images/picker.gif</filename>
+    <filename>params/jpicker/images/preview-opacity.png</filename>
+    <filename>params/jpicker/images/rangearrows.gif</filename>
+    <filename>params/jpicker/index.html</filename>
+    <filename>params/jpicker/jpicker-1.1.6.js</filename>
+    <filename>params/jpicker/jpicker-1.1.6.min.js</filename>
+    <filename>params/jpicker/jPicker.css</filename>
+    <filename>params/jpicker/jquery-1.4.4.min.js</filename>
+    <filename>params/level/index.html</filename>
+    <filename>params/level/level.css</filename>
+    <filename>params/level/level.js</filename>
+    <filename>params/level/level.xml</filename>
+    <filename>params/level.php</filename>
+    <filename>params/level.tmpl.php</filename>
+    <filename>params/level16.tmpl.php</filename>
+    <filename>params/library/fakeElementBase.php</filename>
+    <filename>params/library/flatArray.php</filename>
+    <filename>params/library/index.html</filename>
+    <filename>params/library/parameter.php</filename>
+    <filename>params/multilist.php</filename>
+    <filename>params/offlajnupdatechecker.php</filename>
+    <filename>params/skin.php</filename>
+    <filename>params/theme.js</filename>
+    <filename>params/theme.php</filename>
+    <filename>params/themeselector.tmpl.php</filename>
+    <filename>params/themeselector16.tmpl.php</filename>
+    <filename>params/type.js</filename>
+    <filename>params/typeselector.tmpl.php</filename>
+    <filename>params/typeselector16.tmpl.php</filename>
+    <filename>Pics/big_1.png</filename>
+    <filename>Pics/big_2.png</filename>
+    <filename>Pics/big_3.png</filename>
+    <filename>Pics/big_right1.png</filename>
+    <filename>Pics/big_right2.png</filename>
+    <filename>Pics/big_right3.png</filename>
+    <filename>Pics/green-left.png</filename>
+    <filename>Pics/green-mid.png</filename>
+    <filename>Pics/green-right.png</filename>
+    <filename>Pics/index.html</filename>
+    <filename>Pics/small_1.png</filename>
+    <filename>Pics/small_2.png</filename>
+    <filename>Pics/small_3.png</filename>
+    <filename>Pics/small_right1.png</filename>
+    <filename>Pics/small_right2.png</filename>
+    <filename>Pics/small_right3.png</filename>
+    <filename>Pics/tiny_1.png</filename>
+    <filename>Pics/tiny_2.png</filename>
+    <filename>Pics/tiny_3.png</filename>
+    <filename>Pics/tiny_right1.png</filename>
+    <filename>Pics/tiny_right2.png</filename>
+    <filename>Pics/tiny_right3.png</filename>
+    <filename>themes/carbonite/index.html</filename>
+    <filename>themes/carbonite/theme.css.php</filename>
+    <filename>themes/carbonite/theme.xml</filename>
+    <filename>themes/clear.css.php</filename>
+    <filename>themes/default/index.html</filename>
+    <filename>themes/default/theme.css.php</filename>
+    <filename>themes/default/theme.xml</filename>
+    <filename>themes/index.html</filename>
+  </files>
+  <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+  <creationDate>2012-04-12</creationDate>
+</install>

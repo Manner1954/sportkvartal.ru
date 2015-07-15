@@ -1,0 +1,227 @@
+/*
+#------------------------------------------------------------------------
+# RockWall - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* Base for all menus */
+#gkMainMenu {
+	/*float: left;*/
+	padding: 0;
+	width: auto;
+}
+#gkMainMenu {
+	margin-top: 0;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+	margin: 0;
+	position: relative;
+	text-align: center;
+}
+.gkMenu > ul > li {
+	/*border-right: 1px solid #363636;*/
+	clear: none!important;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	height: 41px;
+	/*letter-spacing: -0.6px;*/
+	line-height: 41px;
+	/*text-transform: uppercase;*/
+	width: 180px;
+}
+.gkMenu > ul > li:first-child {
+	/*border-left: 1px solid #363636;*/
+}
+.gkMenu > ul > li > a {
+	color: #c3c3c3;
+	display: block;
+	height: 41px;
+	line-height: 41px;
+	padding: 0 20px;
+}
+.gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 12px;
+}
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	border: 1px solid #ededed;
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+.gkMenu > ul > li > .childcontent {
+	border-top: none;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	float: left;
+}
+.gkMenu > ul > li:hover > .childcontent,
+.gkMenu > ul > li:hover > .childcontent li:hover > .childcontent {
+	left: inherit;
+}
+.gkMenu > ul > li .childcontent {
+	margin-left: 0;
+	margin-top: 0;
+}
+.gkMenu > ul > li .childcontent .childcontent {
+	margin-left: 160px;
+	margin-top: -35px!important;
+}
+
+/* main menu CSS */
+.gkMenu > ul {
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul > li.active > a {
+	color: #fff;
+	background: #fff;	
+}
+.gkMenu > ul > li > a {
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+}
+
+#gkHeader > ul > li > a > img {
+	padding-right: 8px;
+}
+
+.gkMenu a:hover,
+.gkMenu a:active,
+.gkMenu a:focus,
+.gkMenu li.active > a {
+	color: #e4097e;
+	background: #dfdede;
+}
+.gkMenu > ul li div.childcontent {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 0;
+	text-transform: none;
+}
+.gkMenu > ul li div.childcontent-inner {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.gkMenu > ul li > .childcontent .gkcol {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-bottom: 0;
+}
+.gkMenu > ul li div.childcontent li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: background .2s ease-out;
+	-moz-transition: background .2s ease-out;
+	-ms-transition: background .2s ease-out;
+	-o-transition: background .2s ease-out;
+	transition: background .2s ease-out;
+}
+.gkMenu > ul li div.childcontent li:hover {
+	 background: #fbfbfb;
+}
+.gkMenu > ul li div.childcontent li:hover > a {	
+	color: #29a3e0;
+}
+.gkMenu > ul li div.childcontent li:first-child > a { 
+	border: none;
+}
+.gkMenu > ul li div.childcontent a {
+	border-top: 1px solid #e2e2e2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #555;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: normal;
+	padding: 8px 20px; 
+}
+.gkMenu > ul li li div.childcontent small {
+	color: #aaa;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.gkMenu > ul li div.childcontent li.group {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	border: none !important;
+	background: none;
+}
+.gkMenu > ul li div.childcontent header {
+	padding: 10px 16px 6px 16px;
+	display: block;
+	color: #fff;
+	margin: 0;
+	font-weight: 400!important;
+}
+.gkMenu > ul li div.childcontent header a {
+	font-size: 12px;
+	line-height: 24px;
+	padding: 8px 0 4px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #e5e5e5;
+}
+.gkMenu > ul li div.childcontent header small {
+	display: block;
+	text-transform: none;
+}
+.gkMenu li .module p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* hide mobile menu */
+#gkMobileMenu {
+	display: none;
+}
+
+/* Fixed menu */
+#gkMenuWrapper {
+	background: #eeeded;
+	height: 41px;
+	/*left: 0;*/
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+ul.menuabout_menu {
+	margin-top: 15px;
+}
+
+
+ul.menuabout_menu li:nth-child(odd) {
+	float: left;
+	margin-left: 20px;
+}
+
+ul.menuabout_menu li:nth-child(even) {
+	margin-left: 200px;
+}
+
+#gkExtraMenu{
+	min-width: 920px;
+}

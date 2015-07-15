@@ -1,0 +1,457 @@
+/*
+#------------------------------------------------------------------------
+# RockWall - April Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+ 
+/* Style 1 */
+
+/* template.css */
+a:hover,
+a:active,
+a:focus,
+#gkMainbody article a,
+#gkMainbody article header a:active,
+#gkMainbody article header a:focus,
+#gkMainbody article header a:hover {
+	color: #e4097e;
+}
+#gkSearch .mod-search-searchword {
+	border: 3px solid #e4097e;
+}
+#gkSearch::before {	
+	color: #e4097e;
+}
+#gkTopMenu li a:active,
+#gkTopMenu li a:focus,
+#gkTopMenu li a:hover {
+	color: #e4097e;
+}
+#gkBottom3 a:active,
+#gkBottom3 a:focus,
+#gkBottom3 a:hover,
+#gkBottom4 a:active,
+#gkBottom4 a:focus,
+#gkBottom4 a:hover {
+	color: #e4097e;
+}
+#gkMiddleBar {
+	border-top: 3px solid #29a3e0;
+}
+#gkFooterNav li:hover,
+#gkFooterNav a:hover {
+	color: #e4097e;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #e4097e!important;
+}
+.box.color {
+	background: #29a3e0!important;
+	color: #aedcf2!important;
+}
+.box.color ul li {
+	border-bottom: 1px solid #4bc5f2;
+}
+.box.color a:active,
+.box.color a:focus,
+.box.color a:hover {
+	color: #e4097e!important;
+}
+.box.colortitle .header {
+	color: #29a3e0;
+}
+.gkPopupWrap h3 a {	
+	color: #e4097e
+}
+
+/* joomla.css */
+button,
+.button,
+.button.inverse:active,
+.button.inverse:focus,
+.button.inverse:hover,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a,
+.readon,
+.itemReadMore,
+.readmore > a,
+.pagination ul li a,
+.pagination ul li span {
+	background: #ef45a0;
+	background-image: linear-gradient(bottom, #E5097F 0%, #ef45a0 99%);
+	background-image: -moz-linear-gradient(bottom, #E5097F 0%, #ef45a0 99%);
+	background-image: -webkit-linear-gradient(bottom, #E5097F 0%, #ef45a0 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #E5097F), color-stop(0.99, #ef45a0));
+}
+button:hover,
+.button:hover,
+.button.inverse,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover,
+.readon:hover,
+.itemReadMore:active,
+.itemReadMore:focus,
+.itemReadMore:hover,
+.readmore > a:active,
+.readmore > a:focus,
+.readmore > a:hover,
+.pagination ul li a:hover,
+.pagination ul li span:hover {
+	background: #2AA4E1;
+	background-image: linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -moz-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1162B3), color-stop(0.99, #2AA4E1));
+}
+th a:active,
+th a:focus,
+th a:hover {
+	color: #29a3e0!important;
+}
+article header.itemHasImage h1 a:active,
+article header.itemHasImage h1 a:focus,
+article header.itemHasImage h1 a:hover {
+	color: #29a3e0!important;
+}
+article header li a:hover {
+	color: #29a3e0;
+}
+.tip-title {
+	background: #29a3e0;
+}
+#system-message dd.notice {
+	background-color: #D9EDF7;
+	border-bottom: 1px solid #BCE8F1;
+	color: #3A87AD;
+}
+div.banneritem a {
+	color: #29a3e0!important;
+}
+div.bannerfooter {
+	color: #29a3e0;
+}
+.result-title :before {
+	color: #29A3E0;
+}
+.autocompleter-queried {
+	color: #29a3e0!important
+}
+.box.menu .header { 
+	background: #29A3E0;
+}
+.box.menu li:hover:before {
+	color: #29A3E0;
+}
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background-color: #29a3e0;
+}
+.nspNext:hover::after,
+.nspPrev:hover::after { 
+	color: #29a3e0;
+}
+.gkTabsWrap ol li.active,
+.gkTabsWrap ol li.active:hover {
+	 color: #29a3e0;     
+}
+.gkTabsWrap ol li:hover { 
+	color: #29a3e0; 
+}
+.gkIsWrapper-gk_rockwall .gkIsPreloader {
+	background: #000 url('../images/style1/loader.gif') no-repeat center center;
+}
+.gkIsWrapper-gk_rockwall figcaption a.button {
+	background: #2AA4E1;
+	background-image: linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -moz-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-linear-gradient(bottom, #1162B3 0%, #2AA4E1 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1162B3), color-stop(0.99, #2AA4E1));
+}
+.gkIsWrapper-gk_rockwall figcaption a.button:active,
+.gkIsWrapper-gk_rockwall figcaption a.button:focus,
+.gkIsWrapper-gk_rockwall figcaption a.button:hover {
+	background: #747474;
+	background-image: linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -moz-linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -webkit-linear-gradient(bottom, #4A4A4A 0%, #747474 99%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4A4A4A), color-stop(0.99, #747474));
+}
+
+/* menu.css */
+/*.gkMenu > ul > li {
+	border-right: 1px solid #363636;
+}
+.gkMenu > ul > li:first-child {
+	border-left: 1px solid #363636;
+}*/
+.gkMenu > ul > li > a {
+	color: #3e3a3a;
+}
+.gkMenu > ul > li.active > a {
+	color: #3e3a3a;	
+}
+.gkMenu > ul li div.childcontent li:hover > a {	
+	color: #3e3a3a;
+}
+#gkMenuWrapper {
+	background: #eeeded;
+}
+
+/* k2.css */
+h1 > sup,
+h2 > sup {
+	background: #29a3e0;
+}
+span#formLog {
+	background: #29a3e0;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+	background: #29a3e0;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #29a3e0;
+}
+table.calendar tr td.calendarTodayLinked a {
+	color: #29a3e0;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+	background: #29a3e0;
+}
+.calendarNavLink {
+	color: #29a3e0;
+}
+
+
+/* ART */
+
+ul.menu-earsleft li,
+ul.menu-earsright li {
+	font-weight: 400;
+}
+
+#gkFooterNav > nav.gkMenu ul li:hover a {
+	background: none !important;
+}
+
+#gkFooterNav > nav.gkMenu ul li.active a {
+	background: none !important;
+}
+
+#gkFooterNav > nav.gkMenu ul li {
+	width: auto !important;
+	border-left: 1px solid #fff;
+	font-weight: 400 !important;
+}
+
+#gkFooterNav > nav.gkMenu ul li.first {
+	border-left: none;
+}
+
+#gkFooterNav > nav.gkMenu ul li, #gkFooterNav > nav.gkMenu ul li a {
+	height: 15px;
+	line-height: 15px;
+}
+
+#gkFooterNav > nav.gkMenu ul li a {
+	padding: 0 5px;
+}
+
+#gkFooter {
+	/*background-color: #5CA595;*/
+	margin:-60px auto 0 !important;
+	z-index: 1001;
+}
+
+#gkFooterNav {
+	margin-left: 20px;
+}
+
+.table-shedule {
+	text-align: center;
+}
+
+.backgroundt div span a {
+	color: #000 !important;
+	font-weight: 700 !important;
+}
+
+.table-shedule td {
+	border-right: 1px solid #fff !important;
+	border-bottom: 1px solid #fff !important;
+}
+
+.itemTitle {
+	/*margin-bottom: 20px;*/
+}
+
+.headerBorderRadius  {
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	padding: 3px 7px 3px 7px;
+	background-color: #fff;
+	width: 50%;	
+}
+
+.instructor, .time, #tabtr td, .UnCheckBoxClass {
+	color: #eb0289;
+	font-weight: 700;
+}
+
+article.item-page {
+	background-color: #eeeded !important;
+	/* padding-bottom: 10px !important; */
+	border-bottom: 10px solid #EC018E !important;
+	padding-top: 5px !important;
+	border-top: 10px solid #CEFF57;
+	text-align: justify;
+}
+
+tr.thead_next {
+	color: #eb0289;
+	/*background: #dcdcdb !important;*/
+}
+
+table.table-clubcard tbody tr:nth-child(odd) td {
+    background-color: #dcdcdb;
+}
+
+.newstime {
+	position: relative;
+	top: 5px;
+}
+
+.newsflash-title a {
+	text-decoration: underline !important;
+	color: #eb0289 !important;
+}
+
+.gkFooterTelefon {
+	background-color: #3b8978;
+}
+
+.kattachment-id-container {
+	margin-left: 5px;
+}
+
+.regpro_calendar_months, .regpro_calendar_years {
+	color: #000 !important;
+}
+
+.mannerdivlines {
+	margin-left: -9999px;
+	margin-right: -9999px;
+	overflow: visible;
+}
+
+.mannerdivlines-margin {
+	margin-right: 9999px;
+	margin-left: 9999px;
+}
+
+div.itemBody {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+div.superbox-current-name {
+	color: #fff;
+	font-size: 16pt;
+}
+
+div.superbox-current-intodesc {
+	color: #fff;
+	text-align: justify;
+	margin-left: 235px;
+	width: 70%;
+	margin-top: 20px;}
+
+div.superbox-current-fulldesc {
+	color: #fff;
+	text-align: justify;
+	margin-left: 235px;
+	width: 70%;
+	margin-top: 20px;
+}
+
+.superbox-current-img {
+	float: left; 
+	margin-right: 5px;
+}
+
+div.mannerbox-current-fulldesc {
+	color: #fff;
+	text-align: justify;
+	width: 90%;
+}
+
+
+.mannerbox-current-fulldesc div ul {
+	list-style-type: square;
+}
+
+img.border {
+	padding: 7px;
+}
+
+.published_date {
+	font-size: 11px;
+}
+
+div.gi-elem {
+	width: 315px;
+}
+
+div.superbox {
+	padding-top: 15px !important;
+	text-align: left !important;
+}
+
+div.div_shedule
+{
+	width: 700px !important;
+	float: left;
+}
+
+div.videoYoutube {
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+#share42 {
+	padding: 0px; 
+	border-radius: 0px;
+}
+
+#share42 a {
+	opacity: 0.
+}
+#share42:hover a {
+	opacity: 0.7
+}
+#share42 a:hover {
+	opacity: 1
+}
